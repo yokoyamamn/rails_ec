@@ -1,7 +1,7 @@
 FROM node:14.17.6 as node
 FROM ruby:3.2.1
 
-ENV RAILS_ENV=production
+# ENV RAILS_ENV=production
 
 COPY --from=node /opt/yarn-* /opt/yarn
 COPY --from=node /usr/local/bin/node /usr/local/bin/
